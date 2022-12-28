@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = commands.Bot(command_prefix='!', intents=intents)
-TOKEN = "MTA1Mzc5ODgzMDIyODkwMTkwOA.G7Giog.3cZtJFiuYi4X6BnIoj5kBcpVdh0cNBrWmVAUI4"
+TOKEN = <DISCORD-TOKEN>
 
 api_keys = {}
 prompts = {}
