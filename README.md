@@ -12,7 +12,7 @@ To use the bot, the user must first set their OpenAI API key using the !setapi c
 API Documentation
 To use the OpenAI Completion API, the user must first set their API key using the !setapi command. This key is stored in the api_keys dictionary, which maps user IDs to API keys. The !q command sends a request to the OpenAI Completion API using the openai.Completion.create() method, which takes a number of optional arguments including the model to use, the temperature for the response, and the maximum number of tokens to generate.
 
-Data Model Documentation
+Data Model Documentation <br>
 The prompts dictionary stores the prompts for each user, mapping user IDs to a string of prompts separated by newline characters. The api_keys dictionary stores the API keys for each user, mapping user IDs to API keys.
 
 Architecture Documentation
