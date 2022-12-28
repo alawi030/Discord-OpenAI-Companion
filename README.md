@@ -9,13 +9,13 @@ The bot is written in Python and uses the Discord and OpenAI libraries. It conne
 To use the bot, the user must first set their OpenAI API key using the !setapi command. They can then use the !q command to send a prompt to the OpenAI Completion API and receive a response. If the user wants to clear their previous prompts, they can use the !clearprompts command. To see a list of available commands and their documentation, the user can use the !h command.
 
 # Technical Documentation
-API Documentation
+<h2> API Documentation </h2> <br>
 To use the OpenAI Completion API, the user must first set their API key using the !setapi command. This key is stored in the api_keys dictionary, which maps user IDs to API keys. The !q command sends a request to the OpenAI Completion API using the openai.Completion.create() method, which takes a number of optional arguments including the model to use, the temperature for the response, and the maximum number of tokens to generate.
 
-Data Model Documentation <br>
+<h2> Data Model Documentation </h2> <br>
 The prompts dictionary stores the prompts for each user, mapping user IDs to a string of prompts separated by newline characters. The api_keys dictionary stores the API keys for each user, mapping user IDs to API keys.
 
-Architecture Documentation
+<h2> Architecture Documentation </h2> <br>
 The bot connects to the Discord API using the discord.Client class and listens for commands using the commands.Bot class. It processes commands using the @client.command decorator and sends responses using the client.send() method. To generate responses, it uses the openai.Completion.create() method from the OpenAI library.
 
 # User Guide
